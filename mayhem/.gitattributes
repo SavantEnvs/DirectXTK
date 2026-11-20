@@ -1,0 +1,2 @@
+# Keep the integration layer byte-for-byte (upstream .gitattributes would CRLF-convert *.cpp/*.h).
+* -text

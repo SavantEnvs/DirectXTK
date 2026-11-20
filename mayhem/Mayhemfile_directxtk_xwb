@@ -1,0 +1,11 @@
+project: savantenvs/DirectXTK
+target: directxtk_xwb
+
+cmds:
+  - cmd: /mayhem/mayhem/build-out/fuzz_xwb
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/directxtk_xwb/testsuite

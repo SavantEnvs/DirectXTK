@@ -1,0 +1,11 @@
+project: savantenvs/DirectXTK
+target: directxtk_spritefont
+
+cmds:
+  - cmd: /mayhem/mayhem/build-out/fuzz_spritefont
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/directxtk_spritefont/testsuite
